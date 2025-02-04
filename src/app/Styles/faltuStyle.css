@@ -1,0 +1,520 @@
+
+.setPassword>p{
+  margin:10px 0px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.gap{
+  height: 20px;
+}
+
+.setPassword >:nth-child(3) {
+  margin: 10px 0px;
+}
+
+.button {
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+    --back-color: 240, 40%;
+  
+    cursor: pointer;
+    padding: 0.7em 1em;
+    border-radius: 0.5em;
+    min-height: 2.4em;
+    min-width: 3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: bold;
+  
+    background:linear-gradient(to left, #00BF65 -100%, #ffffff -90% ,#00BF65 100% );
+    color: hsla(0, 0%, 90%);
+    border: 0;
+    box-shadow: inset 0.4px 1px 4px var(--edge-light);
+  
+    transition: all 0.1s var(--bezier);
+  }
+  
+  .button:hover {
+    --edge-light: hsla(0, 0%, 50%, 1);
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    --text-light: rgba(255, 255, 255, 1);
+  
+    background: linear-gradient(
+      140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    box-shadow: inset 0.4px 1px 8px var(--edge-light),
+      0px 0px 8px hsla(var(--back-color), 50%, 0.6);
+    text-shadow: 0px 0px 20px var(--text-light);
+    color: hsla(0, 0%, 100%, 1);
+    letter-spacing: 0.1em;
+    transform: scale(1);
+  }
+  
+  .sign_in_withgoogle{
+    background-color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px gainsboro;
+    /* padding: 5px; */
+    border-radius: 10px;
+    gap: 5px;
+    font-weight: 400;
+    width: 300px;
+    height:45px;
+    cursor: pointer;
+  }
+
+  .sign_in_withgoogle>img{
+    width:25px;
+    height: 25px;
+  }
+
+
+  /* For SginUp card Css */
+.SignUpLogin_page{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.modern-form {
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --primary-light: rgba(59, 130, 246, 0.1);
+    --success: #10b981;
+    --text-main: #1e293b;
+    --text-secondary: #64748b;
+    --bg-input: #f8fafc;
+  
+    position: relative;
+    width: 300px;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.05),
+      inset 0 0 0 1px rgba(148, 163, 184, 0.1);
+    font-family:
+      system-ui,
+      -apple-system,
+      sans-serif;
+      margin: 20px;
+  }
+  
+  .form-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-main);
+    /* margin: 0 0 24px; */
+    text-align: start;
+    letter-spacing: -0.01em;
+
+  }
+
+  .form-title>span{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00BF65;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 36px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: var(--bg-input);
+    color: var(--text-main);
+    transition: all 0.2s ease;
+  }
+  
+  .form-input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    color: var(--text-secondary);
+    pointer-events: none;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .eye-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .submit-button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  
+  .button-glow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  
+  .form-footer {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .login-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .login-link span {
+    color: var(--primary);
+    font-weight: 500;
+  }
+  
+  /* Hover & Focus States */
+  .form-input:hover {
+    border-color: #cbd5e1;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: white;
+    box-shadow: 0 0 0 4px var(--primary-light);
+  }
+  
+  .password-toggle:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+  }
+  
+  .submit-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow:
+      0 4px 12px rgba(59, 130, 246, 0.25),
+      0 2px 4px rgba(59, 130, 246, 0.15);
+  }
+  
+  .submit-button:hover .button-glow {
+    transform: translateX(100%);
+  }
+  
+  .login-link:hover {
+    color: var(--text-main);
+  }
+  
+  .login-link:hover span {
+    color: var(--primary-dark);
+  }
+  
+  /* Active States */
+  .submit-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  .password-toggle:active {
+    transform: scale(0.9);
+  }
+  
+  /* Validation States */
+  .form-input:not(:placeholder-shown):valid {
+    border-color: var(--success);
+  }
+  
+  .form-input:not(:placeholder-shown):valid ~ .input-icon {
+    color: var(--success);
+  }
+  
+  /* Animation */
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    75% {
+      transform: translateX(4px);
+    }
+  }
+  
+  .form-input:not(:placeholder-shown):invalid {
+    border-color: #ef4444;
+    animation: shake 0.2s ease-in-out;
+  }
+  
+  .form-input:not(:placeholder-shown):invalid ~ .input-icon {
+    color: #ef4444;
+  }
+
+
+  /* For sand otp loading */
+   .loding {
+    width: 2.5em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+   }
+   
+   .loding_circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+
+
+
+   /* Success Animation */
+   .success-animation {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-animation::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 4px solid #4caf50;
+    border-radius: 50%;
+    animation: scaleCircle 0.6s ease-out forwards;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .checkmark {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0);
+    animation: showCheck 0.3s ease-out 0.6s forwards;
+  }
+  
+  .checkmark svg {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: drawCheck 0.6s ease-out 0.6s forwards;
+  }
+  
+  @keyframes scaleCircle {
+    0% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes showCheck {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes drawCheck {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+   
+
+  /* UserIconName */
+  .UserIconName {
+    height: 40px;
+    width: 40px;
+    border: 5px double #ffffff;
+    border-radius: 50%;
+    background-color: #00BF65;
+    color: white;
+    box-sizing: border-box; 
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .UserIconName:hover {
+    transform: scale(1.125); 
+    cursor: pointer;
+  }
+
+
+  /* Select customer or vender css */
+.radio-input input {
+  display: none;
+}
+
+.radio-input {
+  --container_width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000000;
+  width: var(--container_width);
+  overflow: hidden;
+  border: 1px solid rgba(53, 52, 52, 0.226);
+  margin: 20px 0px;
+}
+
+.radio-input label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+.selection {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: calc(var(--container_width) / 2);
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: 0.15s ease;
+}
+.spanName{
+  font-size: larger;
+  letter-spacing: 1px;
+}
+
+.radio-input label:has(input:checked) {
+  color: #fff;
+}
+
+.radio-input label:has(input:checked) ~ .selection {
+  background-color: rgb(11 117 223);
+  display: inline-block;
+}
+
+.radio-input label:nth-child(1):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 0 / 2));
+}
+
+.radio-input label:nth-child(2):has(input:checked) ~ .selection {
+  transform: translateX(calc(var(--container_width) * 1 / 2));
+}
+
+
+
+  @media (max-width: 700px) {
+    .button {
+        height: 3em;
+        width: 5em;
+        font-size: 10px;
+    }
+  }

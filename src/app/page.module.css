@@ -1,0 +1,116 @@
+/* General container */
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.highlight {
+  color: black;
+}
+
+/* === SERVICES GRID === */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centers grid items */
+  align-items: center;
+  margin-top: 2rem;
+  max-width: 70%; /* Ensures it's not too wide */
+  margin-left: auto;
+  margin-right: auto; /* Centers the grid */
+}
+
+
+/* Service Card */
+.card {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #d9534f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.serviceName {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* === WHY CHOOSE US GRID === */
+.chooseUsContainer {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.chooseUsTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* 2-column layout for why choose us */
+.chooseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Choose Us Card */
+.chooseCard {
+  border: 2px solid #d9534f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.chooseCard:hover {
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+  }
+  
+  .chooseGrid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for "Why Choose Us" */
+  }
+}

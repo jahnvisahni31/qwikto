@@ -1,0 +1,92 @@
+
+.main{
+  width: 140px;
+  box-shadow: 2px 2px 50px gainsboro;
+  padding: 10px;
+}
+.card {
+    width: 100%;
+    height:150px;
+    background-color: #00BF65;
+    border-radius: 7px;
+    border: 1px solid #00BF65;
+    cursor: pointer;
+    /* margin: 10px ; */
+  }
+  .card>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  }
+  .fl {
+    margin: 5px 0px;
+  }
+  
+  .fl>h1{
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .fl>h5{
+    color: gray;
+  }
+  .fl>div>p{
+    font-size: 12px;
+  }
+  .fl>button{
+    width:100%;
+    height: 30px;
+    margin-top: 5px;
+    border: 0px;
+    color:white;
+    background-color: #00BF65;
+    border-radius: 5px;
+  }
+  .fl>button:hover{
+    color:#00BF65;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #00BF65;
+    
+  }
+  
+  
+  @media (max-width: 550px) {
+    .main{
+      width: 100px;
+      box-shadow: 2px 2px 50px gainsboro;
+      padding: 5px;
+    }
+    .card {
+        width: 100%;
+        height:100px;
+        background-color: #00BF65;
+        border-radius: 7px;
+        border: 1px solid #00BF65;
+        cursor: pointer;
+        /* margin: 10px ; */
+      }
+      .fl {
+        margin: 7px 0px;
+      }
+      
+      .fl>h1{
+        font-size: 10px;
+        font-weight: 300;
+      }
+      .fl>h5{
+        color: gray;
+      }
+      .fl>div>p{
+        font-size: 12px;
+      }
+      .fl>button{
+        width:100%;
+        height: 30px;
+        margin-top: 5px;
+        border: 0px;
+        color:white;
+        background-color: #00BF65;
+        border-radius: 5px;
+      }
+  }
+  

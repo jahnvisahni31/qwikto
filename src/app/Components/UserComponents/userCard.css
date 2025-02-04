@@ -1,0 +1,115 @@
+.userCardMainContainer{
+    height: 540px;
+    min-width: 25vw;
+    box-shadow: 5px 5px 40px gainsboro;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 10px 10px;
+    position: relative;
+    background:linear-gradient(to top, #83f4bf 0%, #ffffff 33% ,#ffffff 66% ,#83f4bf 100%);
+}
+.userCardMainContainer h2{
+    text-align: center;
+}
+.userCardMainContainer p{
+    color: gray;
+    margin: 5px 0px;
+    font-weight: 100;
+}
+.imagePairentContainer{
+    background:linear-gradient(to bottom, #00BF65 4%, #ffffff 100% );
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.imageBorderDiv{
+    border: 5px rgb(146, 22, 22);
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    padding: 5px;
+    width:100px;
+    height: 100px;
+}
+.imageBorderDiv>img{
+    border-radius: 50%;
+}
+.listOfUsercard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 5;
+}
+.listOfUsercard>li{
+    font-size: 15px;
+    margin: 13px 0px;
+    cursor: pointer;
+}
+.listOfUsercard>li:hover{
+    color: #00BF65;
+}
+.mobileSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobileInput{
+    font-weight: 200;
+    text-align: center;
+    border: 0;
+    background: transparent;
+    border-bottom:1px solid gray ;
+}
+.mobileInput:focus {
+    border: 0;
+    outline: none; /* Removes the default browser outline */
+}
+
+.message{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: red;
+}
+
+@media (max-width: 650px) {
+    .userCardMainContainer{
+        height: auto;
+        min-width: 90vw;
+        padding: 5px;
+    }
+    .listOfUsercard{
+        display: flex;
+        flex-direction:unset;
+        flex-wrap: wrap;
+        gap: 0px;
+        /* flex-direction:row-reverse; */
+    }
+    .listOfUsercard>li{
+        height: 30px;
+        list-style: none;
+        color: #00BF65;
+        background-color: white;
+        padding:0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #8cd9b5;
+        margin: 0px 0px;
+    }
+    .listOfUsercard>li:hover{
+        background-color: #00BF65;
+        color: #ffffff;
+    }
+}

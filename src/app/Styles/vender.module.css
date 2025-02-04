@@ -1,0 +1,20 @@
+.parentContainerVendor{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0px 10vw;
+}
+.parentContainerVendor>div{
+    margin: 10px;
+}
+
+/* vender Account css */
+
+  
+
+@media (max-width: 650px) {
+    .parentContainerVendor{
+        align-items: center;
+        flex-direction: column;
+    }
+}

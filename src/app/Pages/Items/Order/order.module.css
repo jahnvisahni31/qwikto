@@ -1,0 +1,200 @@
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.625);
+}
+.container>div{
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 10px;
+}
+.order_page {
+    max-width: 1000px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page_title {
+    text-align: start;
+    color: #747171;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .order_details_container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  /* .image_scroller {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    gap: 10px;
+    padding: 10px 0;
+  }
+   */
+  .product_image {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin: 10px;
+    transition: transform 0.3s; /* Add a hover effect */
+  }
+  
+  .product_image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .item_detils_container{
+    margin: 20px;
+  }
+  .item_details {
+    margin-bottom: 20px;
+  }
+  .item_details>p:nth-child(1){
+    font-size: 3vw;
+    color: #00BF65;
+  }
+  .item_details>p:nth-child(2){
+    font-weight: 200;
+  }
+  .item_details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #0070f3; /* Highlight price */
+  }
+  
+  .status {
+    font-weight: bold;
+    color: rgb(1, 95, 1); /* Status color */
+  }
+  
+  .quantity_selector {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity_label {
+    margin-right: 10px;
+  }
+  
+  .quantity_input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .total_price {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em; /* Larger font for total */
+  }
+  
+  .button_container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  .place_order_button {
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .place_order_button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  .back_button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .back_button:hover {
+    background-color: #bbb; /* Darker gray on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  @media (max-width: 400px) {
+    .product_image {
+        width: 250px;
+        height: 250px;
+    }
+    .order_page {
+        max-width: 1000px;
+        margin: 100px auto 10px;
+        padding: 5px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .image_scroller {
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: 15px;
+        gap: 10px;
+        padding: 0px 0;
+      }
+    .order_details_container {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        padding: 0px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    .item_details>p:nth-child(1){
+        font-size: 8vw;
+        color: #00BF65;
+      }
+  }

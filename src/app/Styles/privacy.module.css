@@ -1,0 +1,122 @@
+.privacy_page{
+    background-color: rgba(0, 0, 0, 0.477);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.modal_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_close{
+    background-color: white;
+    border: 0px;
+}
+.btn_close>img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.modal{
+    /* width: 1000px; */
+    background-color: white;
+    margin: 80px 50px 50px 50px;
+    /* margin-top: 70px; */
+    padding: 50px;
+    height:80%;
+    overflow: scroll;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+.modal_title{
+    color: rgb(236, 100, 75);
+    font-size: 2vw;
+    margin: 0;
+}
+.modal_body>p{
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+    margin: 10px 0px;
+}
+.modal_body>h2{
+    color: gray;
+}
+.modal_body>ul{
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+.modal_body>ul>li{
+    margin-left:10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+.modal::-webkit-scrollbar {
+    display: none; 
+}
+.btn{
+width: 100px;
+height: 30px;
+background-color: rgb(50, 50, 122);
+border: 0px;
+border-radius: 5px;
+color: white;
+transition: 0.3s ease;
+margin-left: 90%;
+}
+.btn:hover{
+    width: 103px;
+    height: 33px; 
+}
+@media (max-width: 900px) {
+    .btn{
+        margin-left: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn{
+        margin-left: 60%;
+    }
+    .modal{
+        /* width: 1000px; */
+        background-color: white;
+        margin: 80px 20px 20px 20px;
+        padding: 10px;
+        height:80%;
+        overflow: scroll;
+        border-radius: 10px;
+        scrollbar-width: none;
+    }
+    .modal_title{
+        color: rgb(236, 100, 75);
+        font-size: 5vw;
+    }
+
+    .modal_body>h2{
+        font-size: 5vw;
+        color: gray;
+    }
+    .modal_body>p{
+        font-size: 3vw;
+        font-weight: 400;
+        color: gray;
+        margin: 10px 0px;
+    }
+    .modal_body>ul>li{
+        font-size: 3vw;
+        font-weight: 400;
+        color: gray;
+    }
+}

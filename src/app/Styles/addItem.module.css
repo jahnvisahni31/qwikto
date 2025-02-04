@@ -1,0 +1,80 @@
+.addItemContainer {
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background:linear-gradient(to top, #00BF65 0%, #ffffff 33% ,#ffffff 66% ,#00BF65 100%);
+    min-height: 510px;
+  }
+  
+  .form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .input:focus, .textarea:focus, .select:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .input,
+  .textarea,
+  .select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 400;
+    outline: none;
+  }
+
+  .textarea {
+    width: 250px; /* Set the width of the textarea */
+    /* height: 50px;  */
+    padding: 8px; /* Optional: Add padding for better readability */
+    resize:none; /* Optional: Prevent resizing the textarea */
+  }
+  .select{
+    height: 40px;
+  } 
+  
+  .button {
+    padding: 10px 15px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    color: green;
+  }
+  

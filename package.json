@@ -1,0 +1,47 @@
+{
+  "type": "module",
+  "name": "qwikto-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@heroicons/react": "^2.2.0",
+    "@mui/icons-material": "^6.3.0",
+    "@mui/joy": "^5.0.0-beta.51",
+    "@mui/material": "^6.3.0",
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "framer-motion": "^12.0.11",
+    "helmet": "^8.0.0",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.8.4",
+    "next": "^15.1.6",
+    "next-auth": "^4.24.11",
+    "otp-generator": "^4.0.1",
+    "pdfjs-dist": "^4.9.155",
+    "postcss": "^8.4.49",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "^15.1.6",
+    "file-loader": "^6.2.0"
+  }
+}

@@ -1,0 +1,240 @@
+.about_page{
+    margin-top: 50px;
+}
+.banner{
+    width: 100%; 
+    height: 700px;
+    display: block;
+}
+
+.aboutus_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .aboutus_container p{
+    font-weight: 400;
+  }
+  .about_us h1, .about-us h2, .about-us p {
+    margin-bottom: 20px;
+  }
+  
+  .about_us h1 {
+    font-size: 2.5em;
+    color: rgb(236, 100, 75). ; /* Primary color */
+    text-align: center;
+  }
+  
+  .about_us h2 {
+    font-size: 1.8em;
+    color:rgb(236, 100, 75); /* Secondary color */
+  }
+  
+  .about_us .vision {
+    font-weight: bold;
+    color:rgb(236, 100, 75);
+    font-weight: 400;
+  }
+  
+  .about_us .tagline {
+    font-size: 1.2em;
+    text-align: center;
+    color:rgb(236, 100, 75);
+    margin-top: 30px;
+    font-style: italic;
+
+  }
+  .aboutus_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .aboutus_banner {
+    flex: 1;
+  }
+
+  .Build{
+    text-align: center;
+    margin: 20px;
+  }
+  .Build>h1{
+    font-size: 40px;
+  }
+  
+  .grid_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .grid_item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 200px; height:auto; border-radius: 6px 6px 6px 6px; background:linear-gradient(to bottom right,rgb(236, 100, 75) -100%, #ffffff 87% ,#00BF65 100% ); box-shadow: 0px 0px 30px 0px #bdbdbd;
+    text-align: center;
+  }
+
+  .rounded_circle_image{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:10px;
+  }
+
+  .linkedin_icon{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+
+  .grid_item>h2{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .grid_item>p{
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* section 4 */
+  .containtContainer>div>h1{
+    color: rgb(236, 100, 75);
+  }
+  .containtContainer>div>p{
+    font-weight: 400;
+    line-height:2vw;
+    font-size: 1.2vw;
+  }
+  .containtContainer>div>ul{
+    margin-left:15px;
+    line-height:2vw;
+    font-size: 1.2vw;
+  }
+  .containtContainer{
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 20px;
+    align-items: center;
+    
+  }
+  .imageContainer>img{
+    width:25vw;
+    height: 20vw;
+    border-radius: 10px;
+  }
+  .aboutSectionContaint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+  }
+  
+  .aboutSectionContaint>img{
+    width: 100%;
+    max-width:1200px ;
+    height: 40vw;
+  }
+@media (max-width: 940px) {
+    .banner{
+        width: 100%; 
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+  .grid_container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .grid_item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 150px; height:auto; border-radius: 6px 6px 6px 6px; background:linear-gradient(to bottom right, #00BF65 -100%, #ffffff 87% ,#00BF65 100% ); box-shadow: 0px 0px 5px 0px #000000;
+  }
+
+  .rounded_circle_image{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:10px;
+  }
+
+  .linkedin_icon{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+
+  .grid_item>h2{
+    font-size: 15px;
+  }
+
+  .grid_item>p{
+    font-weight: 100;
+    font-size: 12px;
+  }
+
+  .Build>h1{
+    font-size: 30px;
+  }
+
+  .containtContainer>div>h1{
+    color:rgb(236, 100, 75);
+  }
+  .containtContainer>div>p{
+    font-weight: 400;
+    line-height:4vw;
+    font-size: 3vw;
+  }
+  .containtContainer>div>ul{
+    margin-left:15px;
+    line-height:5vw;
+    font-size: 3vw;
+  }
+  .containtContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 20px;
+    align-items: center;
+    
+  }
+  .imageContainer>img{
+    width:80vw;
+    height: 50vw;
+    border-radius: 10px;
+  }
+}
+

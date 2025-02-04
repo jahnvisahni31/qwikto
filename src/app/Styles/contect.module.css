@@ -1,0 +1,171 @@
+.contact_page{
+    margin-top: 70px;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+
+  }
+  
+  .contact_content {
+    flex: 1;
+  }
+  
+  .contact_content h1 {
+    font-size: 48px;
+    color: rgb(236, 100, 75);
+    margin-bottom: 20px;
+  }
+  
+  .contact_content p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    /* border: 1px solid black; */
+  }
+  
+  .contact_form input,
+  .contact_form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .contact_form button {
+    background-color:rgb(236, 100, 75);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .contact_form button:hover {
+    background-color:rgb(236, 100, 75);
+  }
+  
+  .contact_banner {
+    flex: 1;
+  }
+  
+  .contact_banner img {
+    max-width: 100%;
+  }
+  
+  .contact_map_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adjust the gap as needed */
+  }
+  
+  .contact_form_container,
+  .map_container {
+    flex: 1;
+    width: 500px; /* Ensure they take up equal space */
+  }
+  
+  .contact_form_container form,
+  .map_container iframe {
+    width: 100%; /* Make the content inside each container fill the width */
+  }
+
+ 
+@media (max-width: 800px) {
+
+    .contact_content h1 {
+        font-size: 5vw;
+        color: #27ae60;
+        margin-bottom: 20px;
+    }
+      
+    .contact_content p {
+        font-size: 2vw;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 30vw;
+    }
+      .contact_form_container form,
+
+      .contact_form_container,
+        .map_container {
+            flex: 2;
+            width: 800px; 
+        }
+}
+
+@media (max-width: 450px) {
+    .contact_content h1 {
+        font-size: 7vw;
+        color:rgb(236, 100, 75);
+        margin: 20px;
+    }
+      
+    .contact_content p {
+        /* flex: 1; */
+        font-size: 3vw;
+        color: #555;
+        margin: 20px;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80vw;
+    }
+
+    .contact_form button {
+        background-color: rgb(236, 100, 75);
+        color: #fff;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin:0 20px ;
+      }
+
+    .contact_form input,
+    .contact_form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      margin-left: 20px;
+    }
+
+    .contact_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 00px 00px;
+        /* margin: 0 2px; */
+        gap: 50px;
+    
+      }
+
+      .contact_form_container,
+        .map_container {
+            flex: 2;
+            width: 90vw; 
+        }
+}

@@ -1,0 +1,440 @@
+.order-list {
+    min-width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* flex-grow: 1; */
+    width: auto;
+    height:480px;
+    position: relative;
+  }
+  
+  .order-list h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: end;
+    color: #7b7b7b;
+  }
+  
+  .order-list > ul {
+    height: 420px;
+    overflow: auto; /* Allow scrolling */
+    scrollbar-width: thin; /* Firefox-specific */
+    scrollbar-color: #27ae60 #f1f1f1; /* Firefox-specific */
+  }
+  
+  /* For WebKit-based browsers (Chrome, Edge, Safari) */
+  .order-list > ul::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .order-list > ul::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track background */
+    border-radius: 5px; /* Rounded corners for the track */
+  }
+  
+  .order-list > ul::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6c63ff, #3c2cc8); /* Gradient color for the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  .order-list > ul::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #3c2cc8, #1a128a); /* Darker gradient on hover */
+  }
+  
+  /* Optional for horizontal scrollbar (if needed) */
+  .order-list > ul::-webkit-scrollbar-horizontal {
+    height: 8px;
+  }
+  
+  .order-list > ul::-webkit-scrollbar-thumb-horizontal {
+    background: linear-gradient(90deg, #6c63ff, #3c2cc8); /* Horizontal scrollbar gradient */
+  }
+ 
+  /* Order Item Styling */
+  .order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+    min-width: 270px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    bottom: 0;
+  }
+  
+  .order-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Order Details Section */
+  .order-details {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .order-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  .order-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+   
+  }
+
+  .order-info>p:nth-child(1){
+    color: #27ae60;
+    font-size:20px;
+  }
+
+  .order-info>p:nth-child(2){
+    font-weight: 200;
+  }
+
+  .order-info>div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-info p {
+    margin: 0;
+    /* font-size: 15px; */
+    color: #555555;
+  }
+  
+  .order-info strong {
+    color: #333333;
+    font-size: 10px;
+  }
+  
+  /* Status Styling */
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    color: #f39c12;
+  }
+  
+  .status.accepted {
+    color: #27ae60;
+  }
+  
+  .status.canceled {
+    color: #e74c3c;
+  }
+  
+  .status.completed {
+    color: #3498db;
+  }
+  
+  .cancellation-reason {
+    font-size: 13px;
+    color: #e74c3c;
+  }
+  
+  /* Cancel Button Styling */
+  .cancel-button {
+    width: 100px;
+    height: 30px;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top:20px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  .cancel-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+
+  /* Container for the cancel form */
+.cancel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* min-width: 50vw; */
+    left: 0;
+    /* margin: 0 auto; */
+    /* position: absolute; */
+    bottom: 0px;
+    flex-grow: 1;
+    /* z-index: 9999; */
+  }
+  
+  /* Style for the input field where the user enters the cancellation reason */
+  .cancel-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  /* Input field focus effect */
+  .cancel-input:focus {
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+  }
+  
+  /* Style for the submit cancel button */
+  .submit-cancel-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for submit cancel button */
+  .submit-cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Style for the cancel edit button */
+  .cancel-edit-button {
+    padding: 10px 20px;
+    background-color: #9e9e9e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for cancel edit button */
+  .cancel-edit-button:hover {
+    background-color: #757575;
+  }
+
+  /* .order-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+} */
+
+.order-list__title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order-list__ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-list__item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  /* display: flex; */
+  align-items: flex-start; 
+  transition: box-shadow 0.3s ease; /* Add a transition for hover effect */
+}
+
+.order-list__item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.order-list__item-content {
+  display: flex;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.order-list__item-info{
+  display: flex;
+}
+
+.order-list__item-image {
+  flex: 0 0 100px; /* Fixed width for the image */
+  margin-right: 15px; /* Space between image and details */
+}
+
+.order-list__item-image img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Round the corners of the image */
+}
+
+.order-list__item-description{
+  flex: 1;
+  font-size: 10px;
+  font-weight: 400;
+  color: gray;
+}
+
+.order-list__item-title {
+  /* margin: 0 0 10px; */
+  color: #007BFF;
+  font-size: 1.2em; /* Slightly larger font for the title */
+}
+
+.order-list__accept-button, .order-list__cancel-button{
+  border: 0px;
+  padding: 5px;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.order-list__accept-button{
+  background-color: #007BFF;
+}
+.order-list__cancel-button{
+  background-color: red;
+}
+
+
+.order-list__item-basic_detailsContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:0px 10px;
+  /* font-size: 1.5vw; */
+}
+
+.order-list__customer-info,
+.order-list__cancellation-info,
+.order-list__timestamps {
+  margin-top: 10px; /* Add space above these sections */
+  padding: 5px 0; /* Add padding for better spacing */
+  border-top: 1px solid #e0e0e0; /* Optional: Add a top border for separation */
+  font-size: 10px;
+}
+
+.order-list__customer-info, .order-list__timestamps{
+  display: flex;
+  gap:0px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order-list__item-cancellationReasondetail{
+  color: red;
+  font-size: 10px;
+}
+
+.order-list__status {
+  font-weight: bold; /* Make the status text bold */
+}
+
+/* Status color styles */
+.order-list__status {
+  padding: 2px 5px; /* Add some padding for better appearance */
+  border-radius: 3px; /* Round the corners of the status indicator */
+}
+
+.order-list__status {
+  color: #fff; /* Default text color */
+}
+
+.order-list__status[data-status="completed"] {
+  background-color: green; /* Green for completed */
+}
+
+.order-list__status[data-status="pending"] {
+  background-color: orange; /* Orange for pending */
+}
+
+.order-list__status[data-status="canceled"] {
+  background-color: red; /* Red for canceled */
+}
+
+.order-list__status[data-status="default"] {
+  background-color: gray; /* Gray for unknown status */
+}
+
+@media (max-width: 280px) {
+  .cancel-form {
+    width: 80vw;
+  }
+}
+  
+  /* Responsive Styling */
+  @media (max-width: 400px) {
+    .order-info>p:nth-child(2){
+        font-size: 4vw;
+        font-weight: 200;
+    }
+    .order-item{
+        padding: 10px;
+    }
+    .order-list{
+        padding: 10px;
+    }
+    .cancellation-reason{
+        font-size:10px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .order-list__item-basic_detailsContainer{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap:0px 10px;
+      font-size: 3vw;
+    }
+    .order-list__item-info{
+      display: flex;
+      flex-direction: column;
+    }
+    .order-details {
+      flex-direction: column;
+    }
+  
+    .order-info {
+      text-align: start;
+    }
+    .cancel-form {
+      min-width: 70.5vw;
+    }
+    .order-list {
+      min-width: 85vw;
+    }
+    .order-item{
+      width: 80vw;
+    }
+  }

@@ -1,0 +1,48 @@
+.banner{
+        max-width: 100%; /* Scale the image to fit the width of the viewport */
+        height: auto; /* Maintain the aspect ratio */
+        display: block; /* Remove extra space below the image */ 
+}
+@media (max-width: 500px) {
+        .banner{
+            max-width: 100%; /* Scale the image to fit the width of the viewport */
+            height: 40vw; /* Maintain the aspect ratio */
+            display: block; /* Remove extra space below the image */ 
+        }
+    }
+
+
+/* Center the entire section */
+/* Center the entire section */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: white;
+}
+
+/* Flex container for buttons */
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Apply styles for buttons */
+.link {
+  display: block;
+}
+
+/* Ensure images are properly sized */
+.image {
+  object-fit: contain;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 640px) {
+  .buttonWrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

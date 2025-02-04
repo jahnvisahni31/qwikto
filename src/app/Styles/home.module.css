@@ -1,0 +1,284 @@
+
+/* /* First Container  */
+.parent_container{
+    display: flex;
+    align-items: end;
+    justify-content:center;
+}
+
+.main_container{
+    width: 900px;
+    height: 350px;
+    margin: 50px ;
+    margin-left: 100px;
+    border-radius: 12px 12px 12px 12px;
+    background:linear-gradient(to top left, rgb(236, 100, 75) -100%, #ffffff 72% ,#ffffff 100% );
+    box-shadow: 0px 0px 43px 0px #c7c7c7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.image_container_outer{
+    width: 260px;
+    height: 260px; 
+
+    /* top:50px; 
+    left: -50px; */
+    border-radius: 12px 12px 12px 12px;
+    background:linear-gradient(to top left,rgb(236, 100, 75) -100%, #ffffff 39% ,#ffffff -100% ,#00BF65 100%);
+    box-shadow: 0px 0px 43px 0px #c7c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    margin-left: 50px;
+}
+.containt_container{
+    width: calc(900px - 250px);
+    margin: 10px;
+    margin-left: 250px;
+}
+.containt_container>h1{
+    margin: 5px 0px;
+    color: rgb(236, 100, 75);
+}
+.containt_container>h3{
+    margin: 5px 0px;
+    color: gray;
+}
+.containt_container>p{
+    color: gray;
+    font-weight: 200;
+}
+
+.image{
+    height: 95%;
+    width: 95%;
+    border-radius: 12px 12px 12px 12px;
+}
+
+
+/* Second Container */
+.parent_container2{
+    display: flex;
+    align-items: end;
+    justify-content:center;
+}
+
+.main_container2{
+    width: 900px;
+    height: 350px;
+    margin: 50px ;
+    margin-right: 100px;
+    border-radius: 12px 12px 12px 12px;
+    background:linear-gradient(to top left, rgb(236, 100, 75) -100%, #ffffff 72% ,#ffffff 100% );
+    box-shadow: 0px 0px 43px 0px #c7c7c7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.image_container_outer2{
+    width: 260px;
+    height: 260px;
+    right:-50px;
+    border-radius: 12px 12px 12px 12px;
+    background:linear-gradient(to top left,rgb(236, 100, 75) -100%, #ffffff 39% ,#ffffff -100% ,#00BF65 100%);
+    box-shadow: 0px 0px 43px 0px #c7c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.containt_container2{
+    width: calc(900px - 250px);
+    margin: 10px;
+    margin-right: 250px;
+}
+.containt_container2>h1{
+    margin: 5px 0px;
+    color: rgb(236, 100, 75);
+}
+.containt_container2>h3{
+    margin: 5px 0px;
+    color: gray;
+}
+.containt_container2>p{
+    color: gray;
+    font-weight: 150;
+}
+
+.image2{
+    height: 95%;
+    width: 95%;
+    border-radius: 12px 12px 12px 12px;
+}
+
+
+@media (max-width: 1030px) {
+    .main_container{
+        width: 90vw;
+        height: 35vw;
+        margin: 20px ;
+        margin-left: 10vw;
+    }
+
+    .image_container_outer{
+        width: 25vw;
+        height: 25vw;
+        left: -50px;
+    }
+
+    .containt_container{
+        margin: 10px;
+        margin-left: 20vw;
+    }
+
+    .containt_container>h1{
+        margin: 5px 0px;
+        color: rgb(236, 100, 75);
+        font-size: 3vw;
+    }
+    .containt_container>h3{
+        margin: 5px 0px;
+        color: gray;
+        font-size: 2vw;
+    }
+    .containt_container>p{
+        color: gray;
+        font-weight: 100;
+        font-size: 1.5vw;
+    }
+
+
+    /* For Second container */
+    .main_container2{
+        width: 90vw;
+        height: 35vw;
+        margin: 20px ;
+        margin-right: 10vw;
+    }
+
+    .image_container_outer2{
+        width: 25vw;
+        height: 25vw;
+        right: -50px;
+    }
+
+    .containt_container2{
+        margin: 10px;
+        margin-right: 20vw;
+    }
+
+    .containt_container2>h1{
+        margin: 5px 0px;
+        color: rgb(236, 100, 75);
+        font-size: 3vw;
+    }
+    .containt_container2>h3{
+        margin: 5px 0px;
+        color: gray;
+        font-size: 2vw;
+    }
+    .containt_container2>p{
+        color: gray;
+        font-weight: 100;
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .parent_container{
+        margin-top: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .main_container{
+        width: 90vw;
+        height: auto;
+        margin: 20px ;
+        padding: 5px;
+        padding-top: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image_container_outer{
+        width: 50vw;
+        height: 50vw;
+        left: 23%;
+        top: -40vw;
+    }
+
+    .containt_container{
+        margin: 10px;
+        /* margin-left: 20vw; */
+    }
+
+    .containt_container>h1{
+        margin: 5px 0px;
+        color: rgb(236, 100, 75);
+        font-size: 5vw;
+    }
+    .containt_container>h3{
+        margin: 5px 0px;
+        color: gray;
+        font-size: 4vw;
+    }
+    .containt_container>p{
+        color: gray;
+        font-weight: 100;
+        font-size: 3vw;
+    }
+
+    /* For Second container */
+    .parent_container2{
+        margin-top: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .main_container2{
+        width: 90vw;
+        height: auto;
+        margin: 20px ;
+        padding: 5px;
+        padding-top: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image_container_outer2{
+        width: 50vw;
+        height: 50vw;
+        left: 23%;
+        top: -40vw;
+    }
+
+    .containt_container2{
+        margin: 10px;
+        /* margin-left: 20vw; */
+    }
+
+    .containt_container2>h1{
+        margin: 5px 0px;
+        color: rgb(236, 100, 75);
+        font-size: 5vw;
+    }
+    .containt_container2>h3{
+        margin: 5px 0px;
+        color: gray;
+        font-size: 4vw;
+    }
+    .containt_container2>p{
+        color: gray;
+        font-weight: 100;
+        font-size: 3vw;
+    }
+
+}

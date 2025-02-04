@@ -1,0 +1,223 @@
+.container>h2{
+text-align: end;
+color: gray;
+font-weight: 400;
+}
+.address-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-height: 470px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #00BF65 #f9f9f9; /* Scrollbar thumb and track colors */
+}
+
+/* Webkit Scrollbar Styling */
+.address-container::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.address-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.address-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+.address-container::-webkit-scrollbar-track {
+  background-color: #f9f9f9; /* Scrollbar track color */
+  border-radius: 4px; /* Rounded corners for the scrollbar track */
+}
+
+
+  .address-details p{
+    color: grey;
+    font-weight: 300;
+  }
+  .address-details p>strong{
+    color: rgb(78, 77, 77);
+  }
+  
+  .no-address {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .add-button, .edit-button, .submit-button, .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .update-button {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .submit_button {
+    background-color: #2196F3;
+    color: white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+    margin: 2px;
+  }
+  
+  .cancel_button {
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin: 2px;
+  }
+
+  .submit_button:hover{
+    background-color: white;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+  }
+
+  .cancel_button:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+  }
+  
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .address-form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+  }
+  .address-form>label{
+    color: gray;
+    margin: 10px;
+    font-size: 14px;
+    gap: 10px;
+    /* font-weight: 300; */
+  }
+  .address-form>p{
+    color: gray;
+    font-size: 10px;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* From Uiverse.io by mrhyddenn */ 
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 12px;
+    color: #0a0a0a;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #0e9007, #38efa9);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #00BF65;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  .update-address-form{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgba(197, 196, 196, 0.6);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
