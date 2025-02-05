@@ -1,7 +1,7 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
-/* General container */
+/* General Container */
 .page_container__aoG4z {
   text-align: center;
   padding: 2rem;
@@ -11,86 +11,132 @@
 .page_title__3jonF {
   font-size: 2rem;
   font-weight: bold;
-  color: #d9534f;
-}
-
-.page_highlight__KaGfy {
-  color: black;
-}
-
-/* === SERVICES GRID === */
-.page_servicesGrid__plSir {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 20px;
-  gap: 20px;
-  justify-content: center; /* Centers grid items */
-  align-items: center;
-  margin-top: 2rem;
-  max-width: 70%; /* Ensures it's not too wide */
-  margin-left: auto;
-  margin-right: auto; /* Centers the grid */
-}
-
-
-/* Service Card */
-.page_card__QV0Om {
-  width: 300px;
-  height: 300px;
-  border: 2px solid #d9534f;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background: white;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+/* Heading Wrapper */
+.page_headingWrapper__pEs1x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Highlighted Text */
+.page_highlight__KaGfy {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* === STARS POSITIONING === */
+/* Left Star (Single) */
+.page_leftStar__xH4gk {
+  width: 50px;
+  height: 50px;
+  bottom: -15px;
+  position: relative;
+}
+
+/* Right Stars Container */
+.page_rightStars__IKxlp {
+  display: flex;
+  flex-direction: relative;
+  align-items: center;
+  gap: 2px;
+  
+}
+
+/* Right Star (Top) */
+.page_rightStarTop__Sdfnb {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -45px; /* Moves it slightly up */
+}
+
+/* Right Star (Bottom) */
+.page_rightStarBottom__cJvNm {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: -1px; /* Moves it slightly down */
+}
+
+/* === SERVICES GRID (3 columns) === */
+.page_servicesGrid__plSir {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Service Card */
+.page_card__QV0Om {
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .page_card__QV0Om:hover {
   transform: scale(1.05);
 }
 
 .page_image__NPJyO {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
 .page_serviceName__eY2cB {
   font-weight: bold;
-  color: #d9534f;
+  color: #e74c3c;
+  margin-top: 10px;
 }
 
-/* === WHY CHOOSE US GRID === */
+/* === WHY CHOOSE US GRID (2 columns) === */
 .page_chooseUsContainer___x1V4 {
-  max-width: 800px;
+  text-align: center;
   margin: 3rem auto;
+  max-width: 800px;
 }
 
 .page_chooseUsTitle__JRTTm {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
 }
 
 /* 2-column layout for why choose us */
 .page_chooseGrid__BpTiQ {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  gap: 20px;
+  grid-gap: 15px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
 
 /* Choose Us Card */
 .page_chooseCard__RbdvQ {
-  border: 2px solid #d9534f;
+  border: 2px solid #e74c3c;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: white;
   display: flex;
@@ -102,11 +148,45 @@
 .page_chooseCard__RbdvQ:hover {
   transform: scale(1.05);
 }
+.page_highlight__KaGfy {
+  color: #e74c3c;
+  font-weight: bold;
+}
+/* Left Icon (Faded) */
+.page_fadedLeftIcon__hqAje {
+  opacity: 0.3;
+  transform: scale(0.9);
+  bottom: -20px;
+}
+
+/* Right Icons */
+.page_rightIcons__ng4oE {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+  top: -20px;
+}
+
+.page_clearRightIcon__5O3N0 {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.page_clearRightIconLower__CYLqe {
+  opacity: 1;
+  transform: scale(1.1);
+  margin-top: -10px; /* Moves lower */
+}
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 1024px) {
   .page_servicesGrid__plSir {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .page_chooseGrid__BpTiQ {
+    grid-template-columns: repeat(2, 1fr); /* Keep "Why Choose Us" in 2 columns */
   }
 }
 

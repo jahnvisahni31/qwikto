@@ -1,4 +1,4 @@
-/* General container */
+/* General Container */
 .container {
   text-align: center;
   padding: 2rem;
@@ -8,84 +8,130 @@
 .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #d9534f;
-}
-
-.highlight {
-  color: black;
-}
-
-/* === SERVICES GRID === */
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center; /* Centers grid items */
-  align-items: center;
-  margin-top: 2rem;
-  max-width: 70%; /* Ensures it's not too wide */
-  margin-left: auto;
-  margin-right: auto; /* Centers the grid */
-}
-
-
-/* Service Card */
-.card {
-  width: 300px;
-  height: 300px;
-  border: 2px solid #d9534f;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background: white;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+/* Heading Wrapper */
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* === STARS POSITIONING === */
+/* Left Star (Single) */
+.leftStar {
+  width: 50px;
+  height: 50px;
+  bottom: -15px;
+  position: relative;
+}
+
+/* Right Stars Container */
+.rightStars {
+  display: flex;
+  flex-direction: relative;
+  align-items: center;
+  gap: 2px;
+  
+}
+
+/* Right Star (Top) */
+.rightStarTop {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -45px; /* Moves it slightly up */
+}
+
+/* Right Star (Bottom) */
+.rightStarBottom {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: -1px; /* Moves it slightly down */
+}
+
+/* === SERVICES GRID (3 columns) === */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Service Card */
+.card {
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .card:hover {
   transform: scale(1.05);
 }
 
 .image {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
 .serviceName {
   font-weight: bold;
-  color: #d9534f;
+  color: #e74c3c;
+  margin-top: 10px;
 }
 
-/* === WHY CHOOSE US GRID === */
+/* === WHY CHOOSE US GRID (2 columns) === */
 .chooseUsContainer {
-  max-width: 800px;
+  text-align: center;
   margin: 3rem auto;
+  max-width: 800px;
 }
 
 .chooseUsTitle {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
 }
 
 /* 2-column layout for why choose us */
 .chooseGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
 }
 
 /* Choose Us Card */
 .chooseCard {
-  border: 2px solid #d9534f;
+  border: 2px solid #e74c3c;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: white;
   display: flex;
@@ -97,11 +143,45 @@
 .chooseCard:hover {
   transform: scale(1.05);
 }
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+/* Left Icon (Faded) */
+.fadedLeftIcon {
+  opacity: 0.3;
+  transform: scale(0.9);
+  bottom: -20px;
+}
+
+/* Right Icons */
+.rightIcons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+  top: -20px;
+}
+
+.clearRightIcon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.clearRightIconLower {
+  opacity: 1;
+  transform: scale(1.1);
+  margin-top: -10px; /* Moves lower */
+}
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 1024px) {
   .servicesGrid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+
+  .chooseGrid {
+    grid-template-columns: repeat(2, 1fr); /* Keep "Why Choose Us" in 2 columns */
   }
 }
 
