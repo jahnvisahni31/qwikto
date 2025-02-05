@@ -24,10 +24,10 @@
     width: 260px;
     height: 260px; 
 
-    /* top:50px; 
+    /* top:70px; 
     left: -50px; */
     border-radius: 12px 12px 12px 12px;
-    background:linear-gradient(to top left,rgb(236, 100, 75) -100%, #ffffff 39% ,#ffffff -100% ,#00BF65 100%);
+    background:linear-gradient(to top left,rgb(236, 100, 75) -100%, #ffffff 39% ,#ffffff -100% , rgb(253, 168, 0)100%);
     box-shadow: 0px 0px 43px 0px #c7c7c7;
     display: flex;
     align-items: center;
@@ -121,15 +121,15 @@
 
 @media (max-width: 1030px) {
     .main_container{
-        width: 90vw;
+        width: 3 0vw;
         height: 35vw;
         margin: 20px ;
         margin-left: 10vw;
     }
 
     .image_container_outer{
-        width: 25vw;
-        height: 25vw;
+        width: 50vw;
+        height: 45vw;
         left: -50px;
     }
 
@@ -216,8 +216,7 @@
     }
 
     .containt_container{
-        margin: 10px;
-        /* margin-left: 20vw; */
+        margin: 10px;rgb(236, 100, 75)
     }
 
     .containt_container>h1{

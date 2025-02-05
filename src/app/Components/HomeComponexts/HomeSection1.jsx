@@ -6,14 +6,14 @@ import bannernd from "../../Images/banner2nd.png"
 
 export default function HomePageSection1() {
   return (
-    <div className="w-full">
+    <div className="w-full pt-[80px] md:pt-[90px]">
       {/* Banner Section */}
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center">
         <Image
           src={firstPosterImage}
           alt="Banner Image"
-          width={2250}
-          height={1000} // Ensures correct proportions
+          width={2150}
+          height={2000} // Ensures correct proportions
           layout="intrinsic"
           objectFit="cover"
         />
@@ -47,7 +47,7 @@ export default function HomePageSection1() {
         <Image
           src={bannernd}
           alt="Banner Image"
-          width={1875}
+          width={2375}
           height={700}
           layout="intrinsic"
           objectFit="cover"
