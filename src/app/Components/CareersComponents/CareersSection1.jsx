@@ -6,7 +6,7 @@ import style from "../../Styles/careers.module.css"
 export default function AboutSection1() {
   return (
     <div>
-      <Image className={style.banner} src={careersbanner} alt=''/>
+      <Image className={style.banner} src={careersbanner} alt='' width={2300}/>
     </div>
   )
 }

@@ -1,17 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/Images/icon.png/route": "app/Images/icon.png/route.js",
-  "/Pages/Blog/page": "app/Pages/Blog/page.js",
-  "/Pages/About/page": "app/Pages/About/page.js",
-  "/Pages/Careers/page": "app/Pages/Careers/page.js",
-  "/Pages/Contact/page": "app/Pages/Contact/page.js",
-  "/Pages/Customer/page": "app/Pages/Customer/page.js",
-  "/Pages/Faqs/page": "app/Pages/Faqs/page.js",
-  "/Pages/Items/Order/page": "app/Pages/Items/Order/page.js",
-  "/Pages/Items/page": "app/Pages/Items/page.js",
-  "/Pages/Security/page": "app/Pages/Security/page.js",
-  "/Pages/SignUp_Login/page": "app/Pages/SignUp_Login/page.js",
-  "/Pages/Terms/page": "app/Pages/Terms/page.js",
-  "/Pages/Vendor/page": "app/Pages/Vendor/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/Pages/Careers/page": "app/Pages/Careers/page.js"
 }
