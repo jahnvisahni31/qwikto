@@ -12,9 +12,9 @@ import divensh from '../../Images/aboutuspic/divensh.png';
 import Shanu from '../../Images/aboutuspic/Shanu.png';
 import linkedin_icon from "../../Images/linkedinpng.png";
 // import shubham_churasia from '../../Images/aboutuspic/shubham-churasia.jpg'
-import vedika from "../../Images/aboutuspic/Vedikagupta.jpeg";
-import shivamani from "../../Images/aboutuspic/shivamani.jpeg";
-import jahnvi from "../../Images/aboutuspic/Jahnvisahni.jpeg";
+import vedika from "../../Images/aboutuspic/Vedikagupta.png";
+import shivamani from "../../Images/aboutuspic/shivamani.png";
+import jahnvi from "../../Images/aboutuspic/jahnvisahni.png";
 import Link from 'next/link';
 
 
