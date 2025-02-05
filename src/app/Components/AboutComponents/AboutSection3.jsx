@@ -12,7 +12,10 @@ import divensh from '../../Images/aboutuspic/divensh.png';
 import Shanu from '../../Images/aboutuspic/Shanu.png';
 import linkedin_icon from "../../Images/linkedinpng.png";
 // import shubham_churasia from '../../Images/aboutuspic/shubham-churasia.jpg'
-import Link from 'next/link'
+import vedika from "../../Images/aboutuspic/Vedikagupta.jpeg";
+import shivamani from "../../Images/aboutuspic/shivamani.jpeg";
+import jahnvi from "../../Images/aboutuspic/Jahnvisahni.jpeg";
+import Link from 'next/link';
 
 
 export default function AboutSection3() {
@@ -64,7 +67,42 @@ export default function AboutSection3() {
               <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
             </Link>
           </div>
-
+          <div className={style.grid_item}>
+            <Image
+              src={Shanu}
+              alt="Deepjoy Roy"
+              width="100"
+              height="100"
+              className={style.rounded_circle_image}
+            />
+            <h2>Shanu</h2>
+            <p>CoFounder & Chief Product Officer</p>
+            <Link
+              href="https://www.linkedin.com/in/iamshanu/overlay/photo/"
+              target="_blank"
+              className={style.icon_circle}
+            >
+              <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
+            </Link>
+          </div>
+          <div className={style.grid_item}>
+            <Image
+              src={Vipinraj}
+              alt="Deepjoy Roy"
+              width="100"
+              height="100"
+              className={style.rounded_circle_image}
+            />
+            <h2>Vipinraj Singh</h2>
+            <p>Co – Founder & Product & Tech </p>
+            <Link
+              href="https://www.linkedin.com/in/vipinraj-singh-555382200/"
+              target="_blank"
+              className={style.icon_circle}
+            >
+              <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
+            </Link>
+          </div>
           <div className={style.grid_item}>
             <Image
               src={ujjwalKumar}
@@ -122,25 +160,6 @@ export default function AboutSection3() {
             </Link>
           </div> */}
 
-          <div className={style.grid_item}>
-            <Image
-              src={Vipinraj}
-              alt="Deepjoy Roy"
-              width="100"
-              height="100"
-              className={style.rounded_circle_image}
-            />
-            <h2>Vipinraj Singh</h2>
-            <p>Co – Founder & Product & Tech </p>
-            <Link
-              href="https://www.linkedin.com/in/vipinraj-singh-555382200/"
-              target="_blank"
-              className={style.icon_circle}
-            >
-              <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
-            </Link>
-          </div>
-
           {/* <div className={style.grid_item}>
             <Image
               src={Subhadip}
@@ -181,16 +200,52 @@ export default function AboutSection3() {
 
           <div className={style.grid_item}>
             <Image
-              src={Shanu}
-              alt="Deepjoy Roy"
+              src={vedika}
+              alt="Vedika Gupta"
               width="100"
               height="100"
               className={style.rounded_circle_image}
             />
-            <h2>Shanu</h2>
-            <p>Chief Product Officer</p>
+            <h2>Vedika Gupta</h2>
+            <p>Product Designer UI/UX</p>
             <Link
-              href="https://www.linkedin.com/in/iamshanu/overlay/photo/"
+              href="https://www.linkedin.com/in/vedika-gupta-6a4a35259/"
+              target="_blank"
+              className={style.icon_circle}
+            >
+              <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
+            </Link>
+          </div>
+          <div className={style.grid_item}>
+            <Image
+              src={shivamani}
+              alt="Shivamani Gangarapu"
+              width="100"
+              height="100"
+              className={style.rounded_circle_image}
+            />
+            <h2>Shivamani Gangarapu</h2>
+            <p>Backend Developer</p>
+            <Link
+              href="https://www.linkedin.com/in/shivamani-gangarapu/"
+              target="_blank"
+              className={style.icon_circle}
+            >
+              <Image src={linkedin_icon} alt='linkedin' className={style.linkedin_icon}/>
+            </Link>
+          </div>
+          <div className={style.grid_item}>
+            <Image
+              src={jahnvi}
+              alt="Jahnvi sahni"
+              width="100"
+              height="100"
+              className={style.rounded_circle_image}
+            />
+            <h2>Jahnvi sahni</h2>
+            <p>Full Stack Developer</p>
+            <Link
+              href="https://www.linkedin.com/in/jahnvisahni31/"
               target="_blank"
               className={style.icon_circle}
             >

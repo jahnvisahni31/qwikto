@@ -550,18 +550,18 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 0.75rem 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
-    justify-content: center; /* Align items properly */
+    justify-content: space-between;
     width: 85%;
-    position: fixed; /* Keeps navbar at the top */
+    position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
   }
   .navbar_logo__ITRYH{
-    margin: 20px;
+    margin-left: 20px;
   }
   .navbar_logo__ITRYH img{
     width: 150px;
@@ -645,10 +645,11 @@
   }
 
   .navbar_rightPart__zWGUJ{
+    flex: 1 1;
     display: flex;
+    justify-content: center; /* Centers navbar links */
     align-items: center;
     gap: 2rem;
-    margin: 4rem, 1rem;
   }
 
   @media (max-width: 700px) {
