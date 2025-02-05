@@ -11,18 +11,6 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
-    ],
-    "/Pages/Careers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Pages/Careers/page.css",
-      "static/chunks/app/Pages/Careers/page.js"
-    ],
-    "/Pages/About/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Pages/About/page.css",
-      "static/chunks/app/Pages/About/page.js"
     ]
   }
 }
