@@ -1,3 +1,368 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/Styles/hompage.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.hompage_page__QwM6G {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* Account for navbar height */
+}
+
+.hompage_headerWrapper__i8LrH {
+    position: relative;
+    width: 100%;
+    background-color: #ff6b6b;
+    padding: 2rem 1rem;
+    z-index: 2;
+}
+
+.hompage_container__Zc9FD {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hompage_headerWrapper__i8LrH h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #ff6b6b;
+
+}
+
+.hompage_searchBar__N_UZ5 {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+
+@media (max-width: 640px) {
+  .hompage_searchBar__N_UZ5 {
+    flex-direction: column;
+    border-radius: 25px;
+  }
+  
+  .hompage_locationSelect__Z0fhp {
+    width: 100%;
+    border-right: none !important;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .hompage_searchInput__dfsOD {
+    width: 100%;
+  }
+}
+
+.hompage_locationSelect__Z0fhp {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.hompage_locationSelect__Z0fhp svg {
+  margin-right: 8px;
+  color: #ff6b6b;
+}
+
+.hompage_searchInput__dfsOD {
+  flex: 1 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.hompage_categories__45XST {
+  margin: 40px 0;
+}
+
+.hompage_categoryIcons__IBbG8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .hompage_categoryIcons__IBbG8 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hompage_categoryIcons__IBbG8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hompage_categoryItem__jaDCB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.hompage_categoryItem__jaDCB:hover {
+  transform: translateY(-5px);
+}
+
+.hompage_icon__gwVFn {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.hompage_cuisineSection__wMGNA {
+  margin: 40px 0;
+}
+
+.hompage_sectionTitle__Pyjvx {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-family: 'Cormorant Garamond', cursive;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.hompage_cuisineGrid__J3_p8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 25px;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .hompage_cuisineGrid__J3_p8 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hompage_cuisineGrid__J3_p8 {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
+
+.hompage_cuisineCard__5sBTm {
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.hompage_cuisineCard__5sBTm:hover {
+  transform: translateY(-5px);
+}
+
+.hompage_cuisineCard__5sBTm img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.hompage_fashionSection__aHAQn {
+  margin-top: 40px;
+}
+
+.hompage_fashionGrid__gvRf8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
+.hompage_fashionCard__YH3TG {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hompage_fashionCard__YH3TG:hover {
+  transform: translateY(-5px);
+}
+
+.hompage_fashionCard__YH3TG img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.hompage_fashionCardContent__31ipK {
+  padding: 15px;
+  text-align: center;
+}
+
+.hompage_fashionCardTitle__B4YWb {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hompage_fashionCardDescription__ZkG6S {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .hompage_FashionGrid__tSKUk {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hompage_FashionGrid__tSKUk {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
+
+
+.hompage_electronicsGrid__YmiAN,
+.hompage_beautyGrid__OILtX {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+
+}
+
+.hompage_electronicsCard__Fqeq5,
+.hompage_beautyCard__p3qYz {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hompage_electronicsCard__Fqeq5:hover,
+.hompage_beautyCard__p3qYz:hover {
+  transform: scale(1.05);
+}
+
+.hompage_electronicsCard__Fqeq5 img,
+.hompage_beautyCard__p3qYz img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.hompage_electronicsTitle___71Wp,
+.hompage_beautyTitle__QVEct {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hompage_discountBadge__7lANF {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .hompage_electronicsGrid__YmiAN, .hompage_beautyGrid__OILtX {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hompage_electronicsGrid__YmiAN, .hompage_beautyGrid__OILtX{
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
+.hompage_healthConcernsGrid__3WQW3,
+.hompage_categoryGrid__b2jz4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+
+}
+
+.hompage_healthCard__duYXH,
+.hompage_categoryCard__Cfmpx {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hompage_healthCard__duYXH:hover,
+.hompage_categoryCard__Cfmpx:hover {
+  transform: scale(1.05);
+}
+
+.hompage_healthCard__duYXH img,
+.hompage_categoryCard__Cfmpx img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.hompage_healthCard__duYXH p,
+.hompage_categoryCard__Cfmpx p {
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+@media (max-width: 768px) {
+  .hompage_healthConcernsGrid__3WQW3, .hompage_categoryGrid__b2jz4 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hompage_healthConcernsGrid__3WQW3, .hompage_categoryGrid__b2jz4 {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/

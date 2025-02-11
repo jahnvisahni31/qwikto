@@ -5,7 +5,7 @@
   margin-top: 70px;
  }
  .footer_footer__dM_hl {
-    background-color: #f8f8f8;
+    background-color: rgb(245, 147, 130);
     padding: 60px 0; /* Add more padding for breathing space */
     width: 100%;
   }
@@ -28,8 +28,7 @@
   }
   .footer_footer_links__XmBbN>div{
     display: flex;
-    justify-content: 
-    space-between;
+    justify-content: space-between;
     align-items: top;
     flex-grow: 1;
   }
@@ -46,7 +45,7 @@
   .footer_footer_column_contact__K_kLp p{
     font-weight: 100;
     color: #636262;
-    /* color: gray; */
+    color: black;
   }
   
   .footer_footer_links__XmBbN h4 {
@@ -59,18 +58,19 @@
   .footer_footer_links__XmBbN ul {
     list-style-type: none;
     padding: 0;
-    text-align: left; /* Keep the list items left aligned */
+    text-align: left;
+    color: black; /* Keep the list items left aligned */
   }
   
   .footer_footer_links__XmBbN ul li {
     margin-bottom: 10px;
     font-size: 14px;
-    color: gray;
+    color: black;
   }
   
   .footer_footer_links__XmBbN ul li a {
     text-decoration: none;
-    color: #636262;
+    color:rgb(17, 17, 17);
     transition: color 0.3s ease;
   }
   
