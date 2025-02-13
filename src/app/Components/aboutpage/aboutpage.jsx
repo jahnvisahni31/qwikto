@@ -67,7 +67,7 @@ const Homepage = () => {
             {filteredCategories.length > 0 ? (
               filteredCategories.map((category) => (
                 <div key={category.id} className={styles.categoryItem}>
-                  <span className={styles.icon}>{category.icon}</span>
+                  <img src={category.image} alt={category.name} className={styles.categoryImage} />
                   <span>{category.name}</span>
                 </div>
               ))

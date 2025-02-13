@@ -1,11 +1,12 @@
 export const categories = [
-  { id: 1, name: 'Delivery', icon: '🛵' },
-  { id: 2, name: 'Fashion', icon: '👕' },
-  { id: 3, name: 'Mobile', icon: '📱' },
-  { id: 4, name: 'Healthcare', icon: '⚕️' },
-  { id: 5, name: 'Pharmacy', icon: '💊' },
-  { id: 6, name: 'Grocery', icon: '🛒' }
+  { id: 1, name: 'Food Delivery', image: '/images/food_delivery.png' },
+  { id: 2, name: 'Fashion/Clothing', image: '/images/fashion_clothing.png' },
+  { id: 3, name: 'Beauty Products', image: '/images/beauty-products.png' },
+  { id: 4, name: 'Electronics', image: '/images/mobile.png' },
+  { id: 5, name: 'Grocery Delivery', image: '/images/grocery.png' },
+  { id: 6, name: 'Medicine', image: '/images/medicine.png' }
 ];
+
 
 export const cuisines = [
   { id: 1, name: 'Pizza', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=300&h=300' },

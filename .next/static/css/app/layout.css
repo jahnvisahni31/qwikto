@@ -5,6 +5,7 @@
   margin-top: 70px;
  }
  .footer_footer__dM_hl {
+    font-family: cursive;
     background-color:rgb(245, 98, 98);
     padding: 60px 0; /* Add more padding for breathing space */
     width: 100%;
@@ -69,13 +70,13 @@
   }
   
   .footer_footer_links__XmBbN ul li a {
-    text-decoration: none;
+    text-decoration : none;
     color:rgb(17, 17, 17);
     transition: color 0.3s ease;
   }
   
   .footer_footer_links__XmBbN ul li a:hover {
-    color:rgb(236, 100, 75);;
+    color:rgb(0, 0, 0);;
   }
   
   /* Social media icons */
@@ -91,7 +92,7 @@
   }
   
   .footer_footer_social__ISk1l a:hover {
-    color: rgb(236, 100, 75);;
+    color: rgb(27, 15, 13);;
   }
   
   /* Contact info styling */
@@ -102,9 +103,10 @@
   }
   
   .footer_footer_contact__AaLTg p {
+    font-family: "Goudy Bookletter 1911", cursive;
     margin: 5px 0;
     font-weight: 100;
-    color: gray;
+    color: black;
   }
   
   /* Download app buttons styling */
